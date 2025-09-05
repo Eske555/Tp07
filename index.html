@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <title>Intro a JavaScript</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div id="resultado">
-        
+    <h1>Trabajo Práctico - Introducción a JavaScript</h1>
+
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+
+        <label for="fecha">Fecha de nacimiento: </label>
+        <input type="date" id="fecha">
+
+        <button onclick="calculadoraEdad()">Calcular Edad</button>
     </div>
-    <script src="utils.js"></script>
-    <script src="ejercicios.js"></script>
+
+    <div id="resultado"></div>
+
+    <div>
+        <button onclick="tirandoFruta()">Tirando Fruta</button>
+        <button onclick="comparandoDatosTipos()">Comparando Datos y Tipos</button>
+        <button onclick="yoObjeto()">Yo Objeto</button> 
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/ejercicios.js"></script>
 </body>
 </html>
