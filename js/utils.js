@@ -55,12 +55,10 @@ function crearCiudad(nombre, fechaFundacion, poblacion, extension) {
     };
 }
 
-function recorrerObjeto(objeto) {
-    let resultado = "";
-    for (let clave in objeto) {
-        resultado += `${clave}: ${objeto[clave]}<br>`;
-    }
-    return resultado;
+function recorrerObjetoMap(objeto) {
+    return Object.keys(objeto).map(function(clave) {
+            return clave + ": " + objeto[clave];
+        }).join("<br>");
 }
 
 function validarNumero(valor) {

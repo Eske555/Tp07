@@ -45,18 +45,33 @@ function comparandoDatosTipos() {
     mostrarEnConsolaYResultado(mensaje);
 }
 function yoObjeto() {
-    const nombre = prompt("Ingrese el nombre de la ciudad:");
-    const fechaFundacion = prompt("Ingrese la fecha de fundación (AAAA-MM-DD):");
-    const poblacion = prompt("Ingrese la población de la ciudad:");
-    const extension = prompt("Ingrese la extensión en km²:");
+    const nombre = document.getElementById("ciudadNombre").value.trim();
+    const fechaFundacion = document.getElementById("ciudadFecha").value;
+    const poblacion = document.getElementById("ciudadPoblacion").value;
+    const extension = document.getElementById("ciudadExtension").value;
 
     if (!nombre || !fechaFundacion || !validarNumero(poblacion) || !validarNumero(extension)) {
         mostrarResultado("Datos inválidos. Por favor ingrese todos los valores correctamente.");
         return;
     }
+
     const ciudad = crearCiudad(nombre, fechaFundacion, poblacion, extension);
-    const resultado = recorrerObjeto(ciudad);
+
+    const resultado = recorrerObjetoMap(ciudad);
+
     mostrarResultado(resultado);
     console.log("Objeto ciudad:", ciudad);
 }
+function trianguloSimple(filas) {
+    Array.from({ length: filas }, (_, i) => i + 1).map(num => console.log("*".repeat(num)));
+}
+trianguloSimple(5);
 
+function trianguloGuiones(filas) {
+    Array.from({ length: filas }, (_, i) => i).map(i => {
+             const espacios = filas - i - 1; 
+             const estrellas = 2 * i + 1;   
+             console.log("-".repeat(espacios) + "*".repeat(estrellas) + "-".repeat(espacios));
+         });
+}
+trianguloGuiones(5);
