@@ -75,3 +75,52 @@ function trianguloGuiones(filas) {
          });
 }
 trianguloGuiones(5);
+
+function nombresConA() {
+    const msj = prompt("Ingrese una lista de nombres separados por coma:");
+    if (!msj) {
+        mostrarResultado("No ingresaste ningún nombre.");
+        return;
+    }
+
+    mostrarResultado(filtrarNombresConA(msj));
+}
+
+function reemplazarTexto() {
+    const texto = prompt("Ingrese una cadena de texto:");
+    const buscar = prompt("Ingrese la palabra que desea reemplazar:");
+    const reemplazo = prompt("Ingrese la palabra de reemplazo:");
+
+    const resultado = reemplazarPalabras(texto, buscar, reemplazo);
+    mostrarResultado(resultado);
+}
+
+function cortarCadena() {
+    const texto = prompt("Ingrese una cadena de texto:");
+    const cantidad = prompt("Ingrese la cantidad de caracteres a mostrar:");
+
+    const resultado = cortarTexto(texto, cantidad);
+    mostrarResultado(resultado);
+}
+
+function generarStringConSeparador() {
+    const texto = prompt("Ingrese una lista de elementos separados por coma:");
+    if (!texto) {
+        mostrarResultado("No ingresaste ningún texto.");
+        return;
+    }
+
+    const resultado = stringConSeparador(texto);
+    mostrarResultado(resultado);
+}
+
+function calcularTotalRecaudacion() {
+    const msg = prompt("Ingrese los pedidos en formato nombre: total separados por coma:");
+    if (!msg) {
+        mostrarResultado("No ingresaste ningún pedido.");
+        return;
+    }
+
+    const resultado = calcularRecaudacion(msg);
+    mostrarResultado(resultado);
+}

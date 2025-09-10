@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Trabajo Práctico - Introducción a JavaScript</h1>
+    <h1>Introducción a JavaScript</h1>
 
-    <div>
+        <div>
+        <h2>Calcular Edad</h2>
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre">
 
@@ -17,31 +18,45 @@
         <input type="date" id="fecha">
 
         <button onclick="calculadoraEdad()">Calcular Edad</button>
-    </div>
 
-    <div>
+        <h2>Tirando Fruta</h2>
+        <button onclick="tirandoFruta()">Tirando Fruta</button><br>
+        
+        <h2>Comparando Datos y Tipos</h2>
+        <button onclick="comparandoDatosTipos()">Comparando Datos y Tipos</button><br>
+
         <h2>Yo Objeto</h2>
         <label for="ciudadNombre">Nombre de la ciudad: </label>
         <input type="text" id="ciudadNombre">
-    
+        
         <label for="ciudadFecha">Fecha de fundación: </label>
         <input type="date" id="ciudadFecha">
-    
+        
         <label for="ciudadPoblacion">Población: </label>
         <input type="number" id="ciudadPoblacion">
-    
+        
         <label for="ciudadExtension">Extensión (km²): </label>
         <input type="number" id="ciudadExtension">
-    
+        
         <button onclick="yoObjeto()">Crear Ciudad</button>
+
+        <h2>Nombres con 'A'</h2>
+        <button onclick="nombresConA()">Nombres con 'A'</button>
+
+        <h2>Reemplazar Palabras</h2>
+        <button onclick="reemplazarTexto()">Reemplazar Palabras</button>
+
+        <h2>Cortar Texto</h2>
+        <button onclick="cortarCadena()">Cortar Texto</button>
+
+        <h2>String con Separador</h2>
+        <button onclick="generarStringConSeparador()">Generar String con Separador</button>
+
+        <h2>Calculadora de Recaudación</h2>
+        <button onclick="calcularTotalRecaudacion()">Calcular Recaudación</button>
     </div>
 
     <div id="resultado"></div>
-
-    <div>
-        <button onclick="tirandoFruta()">Tirando Fruta</button>
-        <button onclick="comparandoDatosTipos()">Comparando Datos y Tipos</button>
-    </div>
 
     <script src="js/utils.js"></script>
     <script src="js/ejercicios.js"></script>
