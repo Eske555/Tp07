@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #f0f4ff, #dfefff);
+  background-color: #a4acd3;
   color: #222;
   padding: 30px;
 }
@@ -16,7 +16,7 @@ h1 {
   text-align: center;
   color: #003366;
   margin-bottom: 30px;
-  font-size: 2.5rem;
+  font-size: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,7 +33,7 @@ body div {
 h2 {
   margin: 15px 0;
   color: #004080;
-  font-size: 1.4rem;
+  font-size: 22px;
   border-bottom: 2px solid #cce0ff;
   padding-bottom: 5px;
 }
@@ -71,11 +71,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-button:active {
-  background: #2c5e91;
-  transform: scale(0.97);
-}
-
 #resultado {
   background: #eef6ff;
   border-left: 5px solid #4a90e2;
@@ -84,6 +79,6 @@ button:active {
   border-radius: 6px;
   width: 80%;
   max-width: 800px;
-  font-size: 1.1rem;
+  font-size: 17px;
   color: #003366;
 }

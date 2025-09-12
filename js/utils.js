@@ -19,9 +19,9 @@ function mostrarLista(frutas) {
 
 function buscarFruta(frutas, frutaBuscada) {
     if (frutas.includes(frutaBuscada)) {
-        mostrarResultado(`Sí, tenemos ${frutaBuscada}!`);
+        mostrarResultado(`Sí, tenemos ${frutaBuscada}`);
     } else {
-        mostrarResultado(`No, no tenemos ${frutaBuscada}!`);
+        mostrarResultado(`No, no tenemos ${frutaBuscada}`);
     }
 }
 
